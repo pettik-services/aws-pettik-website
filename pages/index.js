@@ -1,17 +1,11 @@
-import Head from "next/head";
 import Image from "next/image";
-import Dog from "../public/CategoryImage/Dogs.jpg";
-import Cat from "../public/CategoryImage/Cats.jpg";
 import Android from "../public/android.png";
 import Apple from "../public/apple.png";
-import Grooming from "../public/CategoryImage/Home-grooming.jpg";
-import Consulting from "../public/CategoryImage/Vet-Consulting.jpg";
 import styles from "../components/Home/Home.module.scss";
 import Grid from "@mui/material/Grid";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Carousel from "react-bootstrap/Carousel";
 import Container from "@mui/material/Container";
-import Link from "next/link";
 
 export default function Home() {
   return (
