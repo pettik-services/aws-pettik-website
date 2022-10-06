@@ -4,7 +4,7 @@ import Dog from "../public/CategoryImage/Dogs.jpg";
 import Cat from "../public/CategoryImage/Cats.jpg";
 import Android from "../public/android.png";
 import Apple from "../public/apple.png";
-import Grooming from "../public/CategoryImage/Home-grooming.jpg";
+import Grooming from "../public/CategoryImage/Home-Grooming.jpg";
 import Consulting from "../public/CategoryImage/Vet-Consulting.jpg";
 import styles from "../components/Home/Home.module.scss";
 import Grid from "@mui/material/Grid";
