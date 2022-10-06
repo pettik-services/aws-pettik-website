@@ -12,6 +12,19 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Carousel from "react-bootstrap/Carousel";
 import Container from "@mui/material/Container";
 import Link from "next/link";
+import Banner1 from "./../public/carouselimages/banner1.jpg";
+import Banner2 from "./../public/carouselimages/banner2.jpg";
+import Banner3 from "./../public/carouselimages/banner3.jpg";
+
+import Image1 from "./../public/exploreServicesIcons/PET ADOPTION.png";
+import Image2 from "./../public/exploreServicesIcons/PET MATING.png";
+import Image3 from "./../public/exploreServicesIcons/PET HOSTEL.png";
+import Image4 from "./../public/exploreServicesIcons/PET TRAINING.png";
+import Image5 from "./../public/exploreServicesIcons/PET INSSURANCE.png";
+import Image6 from "./../public/exploreServicesIcons/PET VACCINATION.png";
+import Image7 from "./../public/exploreServicesIcons/PET FOOD.png";
+import Image8 from "./../public/exploreServicesIcons/PET EVENT.png";
+
 
 export default function Home() {
   return (
@@ -60,7 +73,7 @@ export default function Home() {
         <Carousel>
           <Carousel.Item>
             <Image
-              src="/../public/carouselimages/banner1.jpg"
+              src={Banner1}
               alt="First slide"
               height={377}
               width={1728}
@@ -69,7 +82,7 @@ export default function Home() {
           </Carousel.Item>
           <Carousel.Item>
             <Image
-              src="/../public/carouselimages/banner2.jpg"
+              src={Banner2}
               alt="First slide"
               height={377}
               width={1728}
@@ -78,7 +91,7 @@ export default function Home() {
           </Carousel.Item>
           <Carousel.Item>
             <Image
-              src="/../public/carouselimages/banner3.jpg"
+              src={Banner3}
               alt="First slide"
               height={377}
               width={1728}
@@ -126,7 +139,7 @@ export default function Home() {
               <div className={styles.exploreServiceslist}>
                 <div>
                   <Image
-                    src="/../public/exploreServicesIcons/PET ADOPTION.png"
+                    src={Image1}
                     alt="dog-image"
                     height={150}
                     width={150}
@@ -141,7 +154,7 @@ export default function Home() {
               <div className={styles.exploreServiceslist}>
                 <div>
                   <Image
-                    src="/../public/exploreServicesIcons/PET MATING.png"
+                    src={Image2}
                     alt="dog-image"
                     height={150}
                     width={150}
@@ -154,7 +167,7 @@ export default function Home() {
               <div className={styles.exploreServiceslist}>
                 <div>
                   <Image
-                    src="/../public/exploreServicesIcons/PET HOSTEL.png"
+                    src={Image3}
                     alt="dog-image"
                     height={150}
                     width={150}
@@ -167,7 +180,7 @@ export default function Home() {
               <div className={styles.exploreServiceslist}>
                 <div>
                   <Image
-                    src="/../public/exploreServicesIcons/PET TRAINING.png"
+                    src={Image4}
                     alt="dog-image"
                     height={150}
                     width={150}
@@ -182,7 +195,7 @@ export default function Home() {
               <div className={styles.exploreServiceslist}>
                 <div>
                   <Image
-                    src="/../public/exploreServicesIcons/PET INSSURANCE.png"
+                    src={Image5}
                     alt="dog-image"
                     height={150}
                     width={150}
@@ -197,7 +210,7 @@ export default function Home() {
               <div className={styles.exploreServiceslist}>
                 <div>
                   <Image
-                    src="/../public/exploreServicesIcons/PET VACCINATION.png"
+                    src={Image6}
                     alt="dog-image"
                     height={150}
                     width={150}
@@ -212,7 +225,7 @@ export default function Home() {
               <div className={styles.exploreServiceslist}>
                 <div>
                   <Image
-                    src="/../public/exploreServicesIcons/PET FOOD.png"
+                    src={Image7}
                     alt="dog-image"
                     height={150}
                     width={150}
@@ -225,7 +238,7 @@ export default function Home() {
               <div className={styles.exploreServiceslist}>
                 <div>
                   <Image
-                    src="/../public/exploreServicesIcons/PET EVENT.png"
+                    src={Image8}
                     alt="dog-image"
                     height={150}
                     width={150}
