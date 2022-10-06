@@ -5,14 +5,15 @@ import Link from "next/link";
 import SupportAgentIcon from "@mui/icons-material/SupportAgent";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 import Button from "@mui/material/Button";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import { LoginPopUpModal } from "../LoginModal/loginPopUpModal";
 import { ContactusPopUpModal } from "../ContactusModal/contactusModal";
 import { useRouter } from 'next/router';
 
 
 const Header = () => {
-
+  
+const [token,setToken]= useState();
   const router = useRouter();
   const [loginModal, setLoginModal] = useState(false);
   const [contactusModal, setContactusModal] = useState(false);
@@ -23,10 +24,9 @@ const Header = () => {
   };
   const getButton = () => {
     
-    if (typeof window !== "undefined") {
-      return localStorage.getItem("token") === null ? (
+    console.log("tokenvalue",token)
+      return token === null ? (
         <Button
-         
           sx={{ color: "#281ACB", background: "#F9F8F8", fontweight: 700 }}
           onClick={() => {
             setLoginModal(true);
@@ -61,8 +61,12 @@ const Header = () => {
       </>
        
       );
-    }
+    
   };
+  useEffect(()=>{
+const loginToken = localStorage.getItem("token");
+setToken(loginToken);
+  });
   return (
     <>
       <div className={styles.header}>

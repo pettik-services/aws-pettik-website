@@ -53,3 +53,17 @@ a {
 .react-datepicker__year-text--in-range {
   background-color: #A044FF !important;
 }
+.viewContainer{
+  position: relative;
+}
+.storeContainer{
+  position: absolute;
+  display: flex;
+ bottom:0px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.playstoreImage{
+ margin-right: 2rem;
+ 
+}
