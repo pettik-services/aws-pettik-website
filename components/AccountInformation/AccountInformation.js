@@ -10,19 +10,23 @@ import { useRouter } from 'next/router';
 
 
 const AccountInformation = ({userData,setIsEditProfile}) => {
- 
+
   let phoneValue;
+  let userName;
+  let userEmail;
   if (typeof window !== "undefined"){
      phoneValue = localStorage.getItem("phoneNumber") ?? "-";
-     console.log("phonevalhelloe",phoneValue);
+    userName = localStorage.getItem("username") ?? "";
+    userEmail = localStorage.getItem("useremail") ?? "";
   }
   const router = useRouter();
   const [userExist, setUserExist] = useState(false);
+  
  const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
   const { enqueueSnackbar } = useSnackbar();
   const [formData, setFormData] = useState({
-    name: userData?.name,
-    email: userData?.email,
+    name: userName,
+    email: userEmail,
   });
  
 useEffect(()=>{
@@ -44,7 +48,7 @@ useEffect(()=>{
   const register = async (formData) => {
     if (!validateInput(formData)) return;
 
-setIsEditProfile(false);
+//setIsEditProfile(false);
 const token = localStorage.getItem("token");
     try {
       var data = JSON.stringify({
@@ -63,15 +67,13 @@ const token = localStorage.getItem("token");
       };
       setLoding(true);
       axios(config)
-      .then(function (response) {
-       
-      })
+      .then(function (response) {})
       .catch(function () {
         console.log("Error while sending user details");
       });
       setLoding(false);
       enqueueSnackbar("Submited Successfully", { variant: "success" });
-     
+     router.push("/dashboard");
     } catch (e) {
       setLoding(false);
       if (e.response && e.response.status === 400) {

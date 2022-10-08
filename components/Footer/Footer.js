@@ -3,6 +3,7 @@ import StraightIcon from "@mui/icons-material/Straight";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import CallIcon from "@mui/icons-material/Call";
 import MailIcon from "@mui/icons-material/Mail";
+import Link from "next/link";
 const Footer = () => {
   return (
     <footer className={styles.footer}>
@@ -44,8 +45,8 @@ const Footer = () => {
             <li>About Us</li>
             <li>Carrers</li>
             <li>Contact Us</li>
-            <li>Press</li>
-            <li>Legal</li>
+            <Link href="/terms-and-conditions"><li>Terms and conditions</li></Link>
+            <Link href="/privacy-policy"><li>Privacy Policy</li></Link>
           </ul>
         </div>
         <div className={styles.column}>

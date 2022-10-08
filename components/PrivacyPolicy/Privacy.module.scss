@@ -1,0 +1,55 @@
+@import "../../styles/mixins.scss";
+
+.container {
+    width: 100%;
+
+    .headingContainer {
+        background: #f0f0f0;
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .headingContainerParagraph {
+        margin: 0 auto;
+        width: 100%;
+        padding: 60px 0px;
+        line-height: 30px;
+        font-family: "Rubik", sans-serif;
+        max-width: 1200px;
+    }
+
+    .services {
+        padding: 50px 0 25px;
+        background: #ECECEC;
+
+        .servicesConatiner {
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+
+            font-family: "Rubik", sans-serif;
+
+            .servicesConatinerDetails {
+                margin-bottom: 27px;
+
+
+                .detailsHeading {
+                    font-size: 14px;
+                    font-weight: 600;
+                    font-family: "Rubik", sans-serif;
+                    margin-bottom: 1rem;
+                }
+
+                .detailsParagraph {
+                    font-size: 14px;
+                    font-weight: 400;
+                    font-family: "Rubik", sans-serif;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+}
