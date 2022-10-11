@@ -59,7 +59,7 @@ const Vaccination = () => {
   return (
     <div>
       <div className={styles.vaccinationBanner}>
-        <Image src={vaccineBanner} layout="responsive" alt="vaccineBanner" />
+        <Image src={vaccineBanner} layout="responsive" alt="vaccineBanner" priority />
       </div>
       <div className={styles.vaccinationScheduleContainer}>
         <div className={styles.vaccinationSchedule}>
@@ -82,6 +82,7 @@ const Vaccination = () => {
                       width="136"
                       height="136"
                       alt="PuppyIcon"
+                      priority
                     />
                   </div>
                   <div className={styles.vaccinationSchedulePuppyheading}>
@@ -126,6 +127,7 @@ const Vaccination = () => {
                       width="136"
                       height="136"
                       alt="KittenIcon"
+                      priority
                     />
                   </div>
                   <div className={styles.vaccinationScheduleKittenheading}>
@@ -176,6 +178,7 @@ const Vaccination = () => {
                       width="136"
                       height="136"
                       alt="DogCatIcon"
+                      priority
                     />
                   </div>
                   <div className={styles.vaccinationScheduleDogCatheading}>

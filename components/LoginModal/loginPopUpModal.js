@@ -158,6 +158,7 @@ console.log("phonenumber",phone)
               height={230}
               width={100}
               placeholder="blur"
+              priority
             />
             <div className={styles.mobileNumberInputContainer}>
               <div className={styles.countryCode}>+91</div>

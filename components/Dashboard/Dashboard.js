@@ -17,7 +17,6 @@ const Dashboard = () => {
   let phoneValue;
   if (typeof window !== "undefined") {
     phoneValue = localStorage.getItem("phoneNumber") ?? "-";
-    console.log("phonevalhelloe", phoneValue);
   }
 
   const [userData, setUserData] = useState({});
@@ -138,6 +137,7 @@ const Dashboard = () => {
                                               src={DogIcon}
                                               width="50"
                                               height="50"
+                                              priority
                                             />
                                           </div>
                                           <div

@@ -83,7 +83,7 @@ export default function Home() {
           <Carousel.Item>
             <Image
               src={Banner2}
-              alt="First slide"
+              alt="Second slide"
               height={377}
               width={1728}
               priority
@@ -92,7 +92,7 @@ export default function Home() {
           <Carousel.Item>
             <Image
               src={Banner3}
-              alt="First slide"
+              alt="Third slide"
               height={377}
               width={1728}
               priority
@@ -103,11 +103,11 @@ export default function Home() {
       <div className={styles.downloadOurApps}>Download Our App!</div>
       <div className={styles.googleAppleStoreContent}>
         <div className={styles.googleAppleStore}>
-          <Image src={Android} alt="Android-image" height={55} width={190} />
+          <Image src={Android} alt="Android-image" height={55} width={190} priority />
         </div>
 
         <div className={styles.googleAppleStore}>
-          <Image src={Apple} alt="Apple-image" height={55} width={190} />
+          <Image src={Apple} alt="Apple-image" height={55} width={190} priority />
         </div>
       </div>
       <div className={styles.discountContent}>
@@ -143,6 +143,7 @@ export default function Home() {
                     alt="dog-image"
                     height={150}
                     width={150}
+                    priority
                   />
                 </div>
                 <div className={styles.exploreServicesListName}>
@@ -158,6 +159,7 @@ export default function Home() {
                     alt="dog-image"
                     height={150}
                     width={150}
+                    priority
                   />
                 </div>
                 <div className={styles.exploreServicesListName}>PET MATING</div>
@@ -171,6 +173,7 @@ export default function Home() {
                     alt="dog-image"
                     height={150}
                     width={150}
+                    priority
                   />
                 </div>
                 <div className={styles.exploreServicesListName}>PET HOSTEL</div>
@@ -184,6 +187,7 @@ export default function Home() {
                     alt="dog-image"
                     height={150}
                     width={150}
+                    priority
                   />
                 </div>
                 <div className={styles.exploreServicesListName}>
@@ -199,6 +203,7 @@ export default function Home() {
                     alt="dog-image"
                     height={150}
                     width={150}
+                    priority
                   />
                 </div>
                 <div className={styles.exploreServicesListName}>
@@ -214,6 +219,7 @@ export default function Home() {
                     alt="dog-image"
                     height={150}
                     width={150}
+                    priority
                   />
                 </div>
                 <div className={styles.exploreServicesListName}>
@@ -229,6 +235,7 @@ export default function Home() {
                     alt="dog-image"
                     height={150}
                     width={150}
+                    priority
                   />
                 </div>
                 <div className={styles.exploreServicesListName}>PET FOOD</div>
@@ -242,6 +249,7 @@ export default function Home() {
                     alt="dog-image"
                     height={150}
                     width={150}
+                    priority
                   />
                 </div>
                 <div className={styles.exploreServicesListName}>PET EVENT</div>

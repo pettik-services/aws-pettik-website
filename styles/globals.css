@@ -6,6 +6,10 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+.navActive {
+  color: rgb(102 5 202 / 99%);
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -34,7 +38,7 @@ a {
   font-size: 14px;
   line-height: 20.8px;
   display: inline-block;
-  margin: 0px 10px;
+  margin: 0px 5px;
   border-radius: 17px;
   background: #F9F8F8
 }
@@ -53,14 +57,15 @@ a {
 .react-datepicker__year-text--in-range {
   background-color: #A044FF !important;
 }
-.viewContainer{
+
+.viewContainer {
   position: relative;
   width: 100%;
- height: 100vh;
+  height: 100vh;
 }
 
-.storeContainer{
-  margin: 0 1rem auto;
+.storeContainer {
+  margin: 0 0.5rem auto;
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -68,29 +73,55 @@ a {
   justify-content: center;
   top: 20%;
 }
-.pettikHeading{
+
+.pettikHeading {
   color: #8C52FF;
   font-size: 3rem;
   font-weight: 700;
- 
+
 }
-.pettikSubHeading{
+
+.pettikSubHeading {
   color: #07575B;
   font-family: Quicksand;
   font-weight: 600;
   margin-bottom: 2rem;
 }
-.playstoreImage{
+
+.playstoreImage {
   margin-bottom: 1rem;
 }
 
-.pettikContactus{
-  background-color: #FFB13C;
-  color: #fff;
-width: 50%;
-  margin: 0 25%;
-  border-radius: 10px;
+.partner {
+  border: 2px solid transparent;
+  border-radius: 4px;
+  animation-name: blinks;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  width: 100%;
   font-size: 1.1rem;
   font-weight: 600;
   margin-top: 5rem;
+  cursor: pointer;
+}
+
+@keyframes blinks {
+  100% {
+    border-color: #6e09d2fc;
+  }
+}
+
+.partner:hover {
+  background-color: #a044fffc;
+  color: #fff;
+}
+
+.pettikContactus {
+  background-color: #FFB13C;
+  color: #fff;
+  width: 100%;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 5px;
 }

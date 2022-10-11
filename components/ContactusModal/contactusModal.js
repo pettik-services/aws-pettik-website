@@ -23,7 +23,7 @@ export const ContactusPopUpModal = ({ contactusModal, setContactusModal }) => {
             <div className={styles.contactusPhoneNumber}>
               <div className={styles.contactusPhoneNumberIcon}>
                 {/* <PhoneInTalkIcon sx={{ fontSize: 57 }} /> */}
-                <Image src={PhoneInTalkIcon} width="90" height="90"/>
+                <Image src={PhoneInTalkIcon} width="90" height="90" priority/>
               </div>
               <div className={styles.contactusPhoneNumberDetails}>
                 <div className={styles.contactusPhoneNumberDetailsDays}>
@@ -39,7 +39,7 @@ export const ContactusPopUpModal = ({ contactusModal, setContactusModal }) => {
           <div className={styles.contactusEmail}>
               <div className={styles.contactusEmailIcon}>
                 {/* <MailOutlineIcon sx={{ fontSize: 57 }} /> */}
-                <Image src={MailOutlineIcon}  width="40" height="35" />
+                <Image src={MailOutlineIcon}  width="40" height="35" priority/>
               </div>
               <div className={styles.contactusEmailDetails}>
               hello@pettik.com
@@ -47,9 +47,9 @@ export const ContactusPopUpModal = ({ contactusModal, setContactusModal }) => {
             </div>
           </div>
           <div className={styles.contactusChatWithUs}>
-          <div className={styles.contactusChatWithUsIcon}><Image src={HelpOutlineOutlinedIcon} width="15" height="15"/></div>
+          <div className={styles.contactusChatWithUsIcon}><Image src={HelpOutlineOutlinedIcon} width="15" height="15" priority/></div>
           <div className={styles.contactusChatWithUsContent}>Chat with Us.</div>
-          <div className={styles.contactusChatWithUsQuestionMark}><Image src={QuestionAnswerOutlinedIcon} width="15" height="15"/></div>
+          <div className={styles.contactusChatWithUsQuestionMark}><Image src={QuestionAnswerOutlinedIcon} width="15" height="15" priority/></div>
           <div className={styles.contactusChatWithUsFaq}>FAQ.</div>
           </div>
         </div>

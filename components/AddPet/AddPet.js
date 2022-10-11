@@ -233,7 +233,7 @@ const AddPet = () => {
           </Grid>
           <Grid item xs={8}>
             <div className={styles.addPetImage}>
-              <Image src={petImage} width="1119" height="588" />
+              <Image src={petImage} width="1119" height="588" priority/>
             </div>
           </Grid>
         </Grid>

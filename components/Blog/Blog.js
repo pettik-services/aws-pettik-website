@@ -46,7 +46,7 @@ const Blog = () => {
                 width="431"
                 height="232"
                 alt="Dog Allergies - Know All About Them! "
-                
+                priority
               />
             </div>
             <div className={styles.healthText}>

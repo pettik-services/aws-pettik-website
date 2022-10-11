@@ -115,7 +115,7 @@ const token = localStorage.getItem("token");
     <> 
     <div className={styles.accountInformationContainer}>
         <div className={styles.accountInformationBackgroundImage}>
-          <Image src={AccountInfoImage} alt="banner" layout="responsive" />
+          <Image src={AccountInfoImage} alt="banner" layout="responsive" priority/>
         </div>
         <div className={styles.accountInformationBox}>
           <div className={styles.accountInformationBoxHeading}>

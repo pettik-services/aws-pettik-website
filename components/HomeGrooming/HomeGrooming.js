@@ -63,7 +63,6 @@ const HomeGrooming = () => {
 
   const [GroomingData, setGroomingData] = useState([])
  
-  // const ImageData = [ExploreImagesOne,ExploreImagesTwo,ExploreImagesThree, ExploreImagesFour]
 
   const GroomingApiCall = async() => {
     try{
@@ -81,46 +80,6 @@ const HomeGrooming = () => {
   useEffect(() => {
     GroomingApiCall();
   }, []);
-  // const ExploreImagesOneObj = {
-  //   packName: "Essential Package",
-  //   img: ExploreImagesOne,
-  //   price: "1,249",
-  //   time: "75",
-  //   include: ["Bath And Blow Dry","Cleaning Package"],
-  //   description:
-  //     "Upon assessing your dog’s skin & coat our groomers use suitable products, ensuring that it leaves with a clean coat & ears, and trimmed paws",
-  // };
-  // const ExploreImagesTwoObj = {
-  //   packName: "All in one Pack",
-  //   img: ExploreImagesTwo,
-  //   price: "2,099",
-  //   time: "135",
-  //   include: ["Bath And Blow Dry","Hair Cut","Cleaning Package","Face and Feet Trim"],
-  //   description:
-  //   "In addition to the basic grooming our professional groomers trim and style your fur buddy’s hair to keep it camera ready, always!",
-
-  // };
-  // const ExploreImagesThreeObj = {
-  //   packName: "Ticks and Flea Control",
-  //   img: ExploreImagesThree,
-  //   price: "1,349",
-  //   time: "60",
-  //   include: ["Bath And Blow Dry","Anti Tick Treatment"],
-  //   description:
-  //   "Our groomers thoroughly check your pooch’s coat, removing the ticks/fleas manually and end the session with a medicated bath !!",
-
-  // };
-  // const ExploreImagesFourObj = {
-  //   packName: "Customized Pack",
-  //   img: ExploreImagesFour,
-  //   price: "1,249",
-  //   time: "--",
-  //   include: ["Bath And Blow Dry","Dematt","Cleaning Package","Puppy Pack","Haircut","Winter Spa","Face and Feet Trim"],
-  //   description:
-  //   "Have some special requirements for your pooch? Choose the services you want our Groomers to offer !! ",
-
-  // };
-
 
   const [value, setValue] = useState("1");
 
@@ -133,13 +92,14 @@ const HomeGrooming = () => {
       <div className={styles.carouselGroomingContent}>
         <Carousel>
           <Carousel.Item>
-            <Image src={GroomingBannerOne} alt="First slide" layout="responsive" />
+            <Image src={GroomingBannerOne} alt="First slide" layout="responsive" priority/>
           </Carousel.Item>
           <Carousel.Item>
             <Image
               src={GroomingBannerTwo}
               alt="Second slide"
               layout="responsive"
+              priority
             />
           </Carousel.Item>
         </Carousel>
@@ -157,6 +117,7 @@ const HomeGrooming = () => {
             alt="Dog Grooming Services at home"
             width="266"
             height="266"
+            priority
           />
           <div className={styles.groomingImageText}>
             <h3>Breed Specific Haircut</h3>
@@ -172,6 +133,7 @@ const HomeGrooming = () => {
             alt="Pettik certified and trained dog groomers"
             width="266"
             height="266"
+            priority
           />
           <div className={styles.groomingImageText}>
             <h3>Grooming Experts</h3>
@@ -187,6 +149,7 @@ const HomeGrooming = () => {
             alt="A wide variety of tested pet products"
             width="266"
             height="266"
+            priority
           />
           <div className={styles.groomingImageText}>
             <h3>Quality Products</h3>
@@ -202,6 +165,7 @@ const HomeGrooming = () => {
             alt="Pet Salon for all your pet grooming needs"
             width="266"
             height="266"
+            priority
           />
           <div className={styles.groomingImageText}>
             <h3>High Convenience</h3>
@@ -222,6 +186,7 @@ const HomeGrooming = () => {
               src={QualityPetCare}
               alt="qualitypetcare"
              layout="responsive"
+             priority
             />
       </div>
       <div className={styles.exploreOurPack}>
@@ -299,6 +264,7 @@ const HomeGrooming = () => {
               alt="Dog Allergies - Know All About Them! "
               width="625"
               height="406"
+              priority
             />
             <div className={styles.groomingImageText}>
               <h3>Certified Groomers, At Your Service</h3>
@@ -317,6 +283,7 @@ const HomeGrooming = () => {
               alt="Dog Allergies - Know All About Them! "
               width="625"
               height="406"
+              priority
             />
             <div className={styles.groomingImageText}>
               <h3>Happy Pets, Happy Parents</h3>
@@ -347,6 +314,7 @@ const HomeGrooming = () => {
                   src={DogAllergies}
                   alt="Dog Allergies - Know All About Them! "
                   layout="responsive"
+                  priority
                 />
               </div>
               <div className={styles.healthText}>
@@ -363,6 +331,7 @@ const HomeGrooming = () => {
                   src={DrySkin}
                   alt="Here's How You Can Prevent Dry Skin In Dogs"
                   layout="responsive"
+                  priority
                 />
               </div>
               <div className={styles.healthText}>
@@ -379,6 +348,7 @@ const HomeGrooming = () => {
                   src={TickAndFleas}
                   alt="Your Guide To Ticks &amp; Fleas in Pets: Symptoms, Treatment, Care"
                   layout="responsive"
+                  priority
                 />
               </div>
               <div className={styles.healthText}>

@@ -13,7 +13,7 @@ const BlogDetails = () => {
           The Do’s And Don'ts Of Grooming Your Dog At Home
         </div>
         <div className={styles.blogDetailsBanner}>
-          <Image className={styles.blogDetailsBannerImage} src={BlogBanner} layout="responsive" />
+          <Image className={styles.blogDetailsBannerImage} src={BlogBanner} layout="responsive" priority/>
         </div>
         <div className={styles.blogParagraph}>
         "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore 

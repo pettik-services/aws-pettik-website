@@ -12,7 +12,7 @@ const VetConsult = () => {
     <div>
       <div className={styles.vetConsultBanner}>
       
-        <Image src={Banner} alt="Banner-image" height={510} width={1728} />
+        <Image src={Banner} alt="Banner-image" height={510} width={1728} priority />
         <div className={styles.bannerContent}>
         <div className={styles.bannerHeading}>Get instant access to vet care from home.</div>
         <div className={styles.bannerSubHeading}><CheckIcon />Consultations by video/text</div>
@@ -41,6 +41,7 @@ const VetConsult = () => {
                     alt="Android-image"
                     height={55}
                     width={190}
+                    priority
                   />
                 </div>
                 <div className={styles.DownloadAppStore}>
@@ -50,6 +51,7 @@ const VetConsult = () => {
                     alt="Apple-image"
                     height={55}
                     width={190}
+                    priority
                   />
                 </div>
               </div>
@@ -107,6 +109,7 @@ const VetConsult = () => {
                     alt="dog-image"
                     height={150}
                     width={150}
+                    priority
                   />
                 </div>
                 <div className={styles.HowPettikConsultsWorkslistHeading}>
@@ -126,6 +129,7 @@ const VetConsult = () => {
                     alt="dog-image"
                     height={150}
                     width={150}
+                    priority
                   />
                 </div>
                 <div className={styles.HowPettikConsultsWorkslistHeading}>
@@ -145,6 +149,7 @@ const VetConsult = () => {
                     alt="dog-image"
                     height={150}
                     width={150}
+                    priority
                   />
                 </div>
                 <div className={styles.HowPettikConsultsWorkslistHeading}>
@@ -177,6 +182,7 @@ const VetConsult = () => {
               alt="dog-image"
               height={578}
               width={678}
+              priority
             />
           </div>
         </div>

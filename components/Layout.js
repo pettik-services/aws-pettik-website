@@ -9,10 +9,11 @@ import Playstore from "../public/android.png";
 import Appstore from "../public/apple.png";
 
 const Layout = ({ children }) => {
-  const [screen, setScreen] = useState("");
+ 
+  const [screen, setScreen] = useState("963");
   const screenWidth = () => {
     if (typeof window !== "undefined") {
-      let screensize = window.innerWidth;
+      let screensize = window.innerWidth ;
       return screensize;
     }
   };
@@ -20,7 +21,7 @@ const Layout = ({ children }) => {
   useEffect(() => {
     screenWidth();
     setScreen(window.innerWidth);
-  }, [setScreen]);
+  });
 
   return (
     <>
@@ -44,10 +45,15 @@ const Layout = ({ children }) => {
           <div className="storeContainer">
           <div className="pettikHeading">PETTIK</div>
           <div className="pettikSubHeading">Sorry for the inconvience, we are only available in desktop version OR please download our app</div>
-          <div className="playstoreImage"> <Image src={Playstore} width="180" height="50" /></div>
-  <div className="playstoreImage"> <Image src={Appstore} width="180" height="50" /></div>
+          <div className="playstoreImage"> <Image src={Playstore} width="180" height="50" priority /></div>
+  <div className="playstoreImage"> <Image src={Appstore} width="180" height="50" priority /></div>
+  <Link href="https://pettik.surveysparrow.com/s/Online-Partner-Registration-Form/tt-bf79e7d34f?">
+  <div className="partner">
+  BECOME A PARTNER</div>
+  </Link>
   <div className="pettikContactus">
   CONTACT US</div>
+  
   </div>
           </div>
         )}
